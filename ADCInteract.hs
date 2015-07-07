@@ -18,8 +18,9 @@ getData = [0,3,0,1,4,1]
 splitData (x:y:z:rest) = [(x,y,z)] ++ splitData rest
 splitData _ = []
 
-convertToVolt (x:xs) = [x/1] ++ convertToVolt xs
-convertToVolt _ = []
+convertToVolt x = map convertToVoltHepler x
+	where convertToVoltHepler x = undefined
+
 
 
 
